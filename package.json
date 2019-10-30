@@ -4,15 +4,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jquery": "^1.12.4",
+    "jquery-parallax.js": "^1.5.0",
+    "jquery.appear": "^1.0.1",
+    "jquery.counterup": "^2.1.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1",
     "react-scripts": "0.9.5"
   },
   "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp -a build/* docs/",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "copy": "cp -a build/* docs/"
   }
 }

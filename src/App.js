@@ -1,24 +1,54 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Template from './views/Template';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import About from './views/home/About';
+import Service from './views/home/Service';
+import Works from './views/home/Works';
+import Blog from './views/home/Blog';
+import Contacts from './views/home/Contacts';
+import $ from 'jquery';
 
-import LikeButton from './components/LikeButton';
+export default class App extends Component {
+  // componentDidMount(){
+  //   console.log("app : it mount");
+  //   var url = $(location).attr('pathname');
+  //   console.log("URL : "+url);
+  //   $(".page-scroll").filter(function () {
+  //       return $(this).attr("href")==url;
+  //   }).parent().addClass("active");
+  // }
 
-class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-          <LikeButton />
-        </p>
-      </div>
+      <Template intro={true} />
+      // <Router>
+      //   <Switch>
+      //     console.log("path")
+      //     <Route exact path="/">
+      //       <Template intro={true}/>
+      //     </Route>
+      //     <Route path="/about">
+      //       <Template component={<About/>} />
+      //     </Route>
+      //     <Route path="/service">
+      //       <Template component={<Service/>} />
+      //     </Route>
+      //     <Route path="/blog">
+      //       <Template component={<Blog/>} />
+      //     </Route>
+      //     <Route path="/work">
+      //       <Template component={<Works/>} />
+      //     </Route>
+      //     <Route path="/contact">
+      //       <Template component={<Contacts/>} />
+      //     </Route>
+      //   </Switch>
+      // </Router>
     );
   }
 }
-
-export default App;
