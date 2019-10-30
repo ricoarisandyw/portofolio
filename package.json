@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "jquery": "^1.12.4",
+    "jquery": "^3.4.1",
     "jquery-parallax.js": "^1.5.0",
     "jquery.appear": "^1.0.1",
     "jquery.counterup": "^2.1.0",
