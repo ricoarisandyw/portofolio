@@ -1,4 +1,6 @@
+console.log("prepare document");
 $(document).ready(function($){
+    console.log("document ready");
     //===== Prealoder
     
     $(window).on('load', function(event) {
@@ -15,8 +17,13 @@ $(document).ready(function($){
     $(".navbar-nav a").on('click', function() {
         $(".navbar-toggler").removeClass('active');
     });
-    
-    
+
+    // var url = $(location).attr('pathname');
+    // console.log("URL : "+url);
+    // $(".page-scroll").filter(function () {
+    //     return $(this).attr("href")==url;
+    // }).parent().addClass("active");
+
     //===== close navbar-collapse when a  clicked
     
     $(".navbar-nav a").on('click', function () {
@@ -36,7 +43,7 @@ $(document).ready(function($){
     });
     
     
-    //===== Section Menu Active
+    //===== Section Menu Active (For Singlepage)
 
     var scrollLink = $('.page-scroll');
         // Active link switching

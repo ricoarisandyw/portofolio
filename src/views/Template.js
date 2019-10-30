@@ -4,7 +4,6 @@ import Header from './Header';
 import Footer from './Footer';
 import Head from './Head';
 import PageLoader from '../components/PageLoader';
-import Content from './Content';
 
 export default class Template extends React.Component {
     render(){
@@ -14,8 +13,7 @@ export default class Template extends React.Component {
                 <Head />
                 <PageLoader />
                 <Header intro={this.props.intro}/>
-                <Content />
-                {/* {this.props.component} */}
+                {this.props.component}
                 <Footer />
             </div>
         );

@@ -12,12 +12,13 @@ export default class Footer extends React.Component {
                                     <a href="index.html">
                                         <img src="assets/images/logo-2.png" alt="Logo"/>
                                     </a>
-                                    <p className="mt-">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p className="mt-"></p>
                                     <ul>
-                                        <li><a href="#"><i className="lni-facebook-filled"></i></a></li>
-                                        <li><a href="#"><i className="lni-twitter-original"></i></a></li>
-                                        <li><a href="#"><i className="lni-pinterest"></i></a></li>
-                                        <li><a href="#"><i className="lni-linkedin-original"></i></a></li>
+                                        {/* <li><a href="#"><i className="lni-facebook-filled"></i></a></li>
+                                        <li><a href="#"><i className="lni-twitter-original"></i></a></li> */}
+                                        <li><a href="https://github.com/ricoarisandyw"><i className="lni-github"></i></a></li>
+                                        <li><a href="https://www.instagram.com/ricoarisandy/"><i className="lni-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/ricoarisandyw/"><i className="lni-linkedin-original"></i></a></li>
                                     </ul>
                                 </div> 
                             </div>

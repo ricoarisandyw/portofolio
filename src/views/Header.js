@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import Intro from './home/Intro';
+import Intro from './home/section/Intro';
 
 export default class Header extends React.Component {
     render(){
@@ -16,9 +16,6 @@ export default class Header extends React.Component {
                         <div className="row">
                             <div className="col-lg-12">
                                 <nav className="navbar navbar-expand-lg">
-                                    {/* <Link className="navbar-brand" to="/">
-                                        <img src="/assets/images/logo.png" alt="Logo"/>
-                                    </Link> */}
                                     <a className="navbar-brand" href="/">
                                         <img src="/assets/images/logo.png" alt="Logo"/>
                                     </a>
@@ -36,11 +33,14 @@ export default class Header extends React.Component {
                                             <li className="nav-item"><Link className="page-scroll" to="/work">Portfolio</Link></li>
                                             <li className="nav-item"><Link className="page-scroll" to="/blog">Blog</Link></li>
                                             <li className="nav-item"><Link className="page-scroll" to="/contact">Contact</Link></li> */}
-                                            <li className="nav-item"><a className="page-scroll" href="#home">Home</a></li>
+                                            <li className="nav-item"><Link className="page-scroll" to="/">Home</Link></li>
+                                            {/* <li className="nav-item"><a className="page-scroll" href="/">Home</a></li> */}
                                             <li className="nav-item"><a className="page-scroll" href="#about">About</a></li>
                                             <li className="nav-item"><a className="page-scroll" href="#service">Services</a></li>
-                                            <li className="nav-item"><a className="page-scroll" href="#work">Portfolio</a></li>
-                                            <li className="nav-item"><a className="page-scroll" href="#blog">Blog</a></li>
+                                            <li className="nav-item"><Link className="page-scroll" to="/portofolio">Portfolio</Link></li>
+                                            <li className="nav-item"><Link className="page-scroll" to="/blog">Blog</Link></li>
+                                            {/* <li className="nav-item"><a className="page-scroll" href="#portofolio">Portfolio</a></li>
+                                            <li className="nav-item"><a className="page-scroll" href="#blog">Blog</a></li> */}
                                             <li className="nav-item"><a className="page-scroll" href="#contact">Contact</a></li>
                                         </ul>
                                     </div>

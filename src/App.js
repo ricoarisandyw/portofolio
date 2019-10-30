@@ -6,49 +6,27 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import About from './views/home/About';
-import Service from './views/home/Service';
-import Works from './views/home/Works';
-import Blog from './views/home/Blog';
-import Contacts from './views/home/Contacts';
-import $ from 'jquery';
+import Home from './views/home/Home';
+import Portofolio from './views/portofolio/Portofolio';
+import Blog from './views/blog/Blog';
 
 export default class App extends Component {
-  // componentDidMount(){
-  //   console.log("app : it mount");
-  //   var url = $(location).attr('pathname');
-  //   console.log("URL : "+url);
-  //   $(".page-scroll").filter(function () {
-  //       return $(this).attr("href")==url;
-  //   }).parent().addClass("active");
-  // }
-
   render() {
     return (
-      <Template intro={true} />
-      // <Router>
-      //   <Switch>
-      //     console.log("path")
-      //     <Route exact path="/">
-      //       <Template intro={true}/>
-      //     </Route>
-      //     <Route path="/about">
-      //       <Template component={<About/>} />
-      //     </Route>
-      //     <Route path="/service">
-      //       <Template component={<Service/>} />
-      //     </Route>
-      //     <Route path="/blog">
-      //       <Template component={<Blog/>} />
-      //     </Route>
-      //     <Route path="/work">
-      //       <Template component={<Works/>} />
-      //     </Route>
-      //     <Route path="/contact">
-      //       <Template component={<Contacts/>} />
-      //     </Route>
-      //   </Switch>
-      // </Router>
+      <Router>
+        <Switch>
+          console.log("path")
+          <Route exact path="/">
+            <Template intro={true} component={<Home />}/>
+          </Route>
+          <Route path="/portofolio">
+            <Template component={<Portofolio />}/>
+          </Route>
+          <Route path="/blog">
+            <Template component={<Blog />}/>
+          </Route>
+        </Switch>
+      </Router>
     );
   }
 }
