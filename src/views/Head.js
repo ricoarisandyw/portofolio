@@ -10,7 +10,7 @@ export default class Head extends React.Component{
                 <meta name="description" content=""/>
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
                 <title>Rico: Personal Portfolio & CV</title>
-                <link rel="shortcut icon" href="/images/favicon.png" type="image/png"/>
+                <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png"/>
             </Helmet>
         );
     }

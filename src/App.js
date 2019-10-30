@@ -13,20 +13,21 @@ import Blog from './views/blog/Blog';
 export default class App extends Component {
   render() {
     return (
-      <Router>
-        <Switch>
-          console.log("path")
-          <Route exact path="/">
-            <Template intro={true} component={<Home />}/>
-          </Route>
-          <Route path="/portofolio">
-            <Template component={<Portofolio />}/>
-          </Route>
-          <Route path="/blog">
-            <Template component={<Blog />}/>
-          </Route>
-        </Switch>
-      </Router>
+      <Template intro={true} component={<Home />}/>
+      // <Router>
+      //   <Switch>
+      //     console.log("path")
+      //     <Route exact path="/">
+      //       <Template intro={true} component={<Home />}/>
+      //     </Route>
+      //     <Route path="/portofolio">
+      //       <Template component={<Portofolio />}/>
+      //     </Route>
+      //     <Route path="/blog">
+      //       <Template component={<Blog />}/>
+      //     </Route>
+      //   </Switch>
+      // </Router>
     );
   }
 }

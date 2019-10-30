@@ -38,7 +38,8 @@ export default class Works extends React.Component {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="work-more text-center mt-50">
-                                    <Link to="/portofolio" className="main-btn">more works</Link>
+                                    {/* <Link to="/portofolio" className="main-btn">more works</Link> */}
+                                    <a href="/portofolio" className="main-btn">more works</a>
                                 </div>
                             </div>
                         </div> 

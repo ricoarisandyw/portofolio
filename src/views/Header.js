@@ -17,7 +17,7 @@ export default class Header extends React.Component {
                             <div className="col-lg-12">
                                 <nav className="navbar navbar-expand-lg">
                                     <a className="navbar-brand" href="/">
-                                        <img src="/assets/images/logo.png" alt="Logo"/>
+                                        <img src="assets/images/logo.png" alt="Logo"/>
                                     </a>
                                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                         <span className="toggler-icon"></span>
@@ -33,14 +33,14 @@ export default class Header extends React.Component {
                                             <li className="nav-item"><Link className="page-scroll" to="/work">Portfolio</Link></li>
                                             <li className="nav-item"><Link className="page-scroll" to="/blog">Blog</Link></li>
                                             <li className="nav-item"><Link className="page-scroll" to="/contact">Contact</Link></li> */}
-                                            <li className="nav-item"><Link className="page-scroll" to="/">Home</Link></li>
-                                            {/* <li className="nav-item"><a className="page-scroll" href="/">Home</a></li> */}
+                                            {/* <li className="nav-item"><Link className="page-scroll" to="/">Home</Link></li> */}
+                                            <li className="nav-item"><a className="page-scroll" href="#">Home</a></li>
                                             <li className="nav-item"><a className="page-scroll" href="#about">About</a></li>
                                             <li className="nav-item"><a className="page-scroll" href="#service">Services</a></li>
-                                            <li className="nav-item"><Link className="page-scroll" to="/portofolio">Portfolio</Link></li>
-                                            <li className="nav-item"><Link className="page-scroll" to="/blog">Blog</Link></li>
-                                            {/* <li className="nav-item"><a className="page-scroll" href="#portofolio">Portfolio</a></li>
-                                            <li className="nav-item"><a className="page-scroll" href="#blog">Blog</a></li> */}
+                                            {/* <li className="nav-item"><Link className="page-scroll" to="/portofolio">Portfolio</Link></li>
+                                            <li className="nav-item"><Link className="page-scroll" to="/blog">Blog</Link></li> */}
+                                            <li className="nav-item"><a className="page-scroll" href="#portofolio">Portfolio</a></li>
+                                            <li className="nav-item"><a className="page-scroll" href="#blog">Blog</a></li>
                                             <li className="nav-item"><a className="page-scroll" href="#contact">Contact</a></li>
                                         </ul>
                                     </div>

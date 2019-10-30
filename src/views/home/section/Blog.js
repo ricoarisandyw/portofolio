@@ -29,7 +29,8 @@ export default class Blog extends React.Component{
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="blog-more text-center mt-50">
-                                <Link className="main-btn" to="/blog">More posts</Link>
+                                {/* <Link className="main-btn" to="/blog">More posts</Link> */}
+                                <a className="main-btn" href="/blog">More posts</a>
                             </div>
                         </div>
                     </div>
